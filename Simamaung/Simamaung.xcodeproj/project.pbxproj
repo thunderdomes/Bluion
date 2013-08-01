@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01BDD1D17AA1BEB005396AF /* centerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D01BDD1C17AA1BEB005396AF /* centerViewController.m */; };
 		D0FF201E17A01C7E004F27F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF201D17A01C7E004F27F3 /* UIKit.framework */; };
 		D0FF202017A01C7E004F27F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF201F17A01C7E004F27F3 /* Foundation.framework */; };
 		D0FF202217A01C7E004F27F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF202117A01C7E004F27F3 /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D01BDD1B17AA1BEB005396AF /* centerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = centerViewController.h; sourceTree = "<group>"; };
+		D01BDD1C17AA1BEB005396AF /* centerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = centerViewController.m; sourceTree = "<group>"; };
 		D0FF201A17A01C7E004F27F3 /* Simamaung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simamaung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FF201D17A01C7E004F27F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D0FF201F17A01C7E004F27F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +51,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D01BDD1417AA1B80005396AF /* library */ = {
+			isa = PBXGroup;
+			children = (
+				D01BDD1517AA1B81005396AF /* common */,
+				D01BDD1617AA1B81005396AF /* image */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		D01BDD1517AA1B81005396AF /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		D01BDD1617AA1B81005396AF /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		D01BDD1717AA1B81005396AF /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D01BDD1817AA1B81005396AF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D01BDD1917AA1BA8005396AF /* cell */,
+				D01BDD1A17AA1BA8005396AF /* center */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D01BDD1917AA1BA8005396AF /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		D01BDD1A17AA1BA8005396AF /* center */ = {
+			isa = PBXGroup;
+			children = (
+				D01BDD1B17AA1BEB005396AF /* centerViewController.h */,
+				D01BDD1C17AA1BEB005396AF /* centerViewController.m */,
+			);
+			path = center;
+			sourceTree = "<group>";
+		};
 		D0FF201117A01C7D004F27F3 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +136,9 @@
 		D0FF202317A01C7E004F27F3 /* Simamaung */ = {
 			isa = PBXGroup;
 			children = (
+				D01BDD1417AA1B80005396AF /* library */,
+				D01BDD1717AA1B81005396AF /* model */,
+				D01BDD1817AA1B81005396AF /* view */,
 				D0FF202C17A01C7E004F27F3 /* netraAppDelegate.h */,
 				D0FF202D17A01C7E004F27F3 /* netraAppDelegate.m */,
 				D0FF202417A01C7E004F27F3 /* Supporting Files */,
@@ -167,6 +228,7 @@
 			files = (
 				D0FF202A17A01C7E004F27F3 /* main.m in Sources */,
 				D0FF202E17A01C7E004F27F3 /* netraAppDelegate.m in Sources */,
+				D01BDD1D17AA1BEB005396AF /* centerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +343,7 @@
 				D0FF203917A01C7E004F27F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
